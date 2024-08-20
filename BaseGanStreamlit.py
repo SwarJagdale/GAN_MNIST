@@ -6,7 +6,7 @@ from tensorflow import keras
 import matplotlib.pyplot as plt
 
 # Load the generator model
-gen = joblib.load('gan_images_mnist/GAN_gen.pkl')
+gen = keras.models.load_model('gan_images_mnist/GAN_gen.h5  ')
 
 # Generate a new image
 generate=st.button('Generate New Image')
